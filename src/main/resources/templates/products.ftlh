@@ -10,12 +10,20 @@
 <body>
     <h1>BuySell</h1>
     <hr>
+    <form action="/" method="get">
+        Search: <input type="text" name="title">
+        <input type="submit" value="Search">
+    </form>
+    <hr>
+    
     <h4> Products from Everywhere</h4>
     <#list products as product>
-        <div>
+            <div>
                 <p><b>${product.title} </b>
                 ${product.price} | <a href="/product/${product.id}">See more...</a></p>
-        </div>
+            </div>
+        <#else>
+            <h3>No products</h3>
     </#list>
     <hr>
     <h3>Create new product...</h3>
