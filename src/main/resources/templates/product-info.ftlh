@@ -18,11 +18,12 @@
     <strong>Title:</strong> ${product.title}<br>
     <strong>Description:</strong> ${product.description}<br>
     <strong>City:</strong> ${product.city}<br>
-    <strong>Author:</strong> ${product.author}<br>
+    <strong>Author:</strong> ${product.user.author}<br>
+    <strong>Phone:</strong> ${product.user.phoneNumber}<br>
     <strong>Price:</strong> ${product.price}<br>
 <br>
-    <form action="/product/delete/${product.id}" method="post">
-        <input type="submit" value="Remove Product">
-    </form>
+<#--    <form action="/product/delete/${product.id}" method="post">-->
+<#--        <input type="submit" value="Remove Product">-->
+<#--    </form>-->
 </body>
 </html>
