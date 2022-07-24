@@ -9,6 +9,11 @@
 </head>
 <body>
     <h1>BuySell Product Page</h1><br>
+    <#list  images as img>
+        <img src="/images/${img.id}" alt="" height="60px"><br><br>
+    </#list>
+
+
     <strong>Id:</strong> ${product.id}<br>
     <strong>Title:</strong> ${product.title}<br>
     <strong>Description:</strong> ${product.description}<br>
